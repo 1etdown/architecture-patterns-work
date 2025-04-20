@@ -1,0 +1,14 @@
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\bin\Debug\net9.0\Curseddd.exe
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\bin\Debug\net9.0\Curseddd.deps.json
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\bin\Debug\net9.0\Curseddd.runtimeconfig.json
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\bin\Debug\net9.0\Curseddd.dll
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\bin\Debug\net9.0\Curseddd.pdb
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\obj\Debug\net9.0\Curseddd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\obj\Debug\net9.0\Curseddd.AssemblyInfoInputs.cache
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\obj\Debug\net9.0\Curseddd.AssemblyInfo.cs
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\obj\Debug\net9.0\Curseddd.csproj.CoreCompileInputs.cache
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\obj\Debug\net9.0\Curseddd.dll
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\obj\Debug\net9.0\refint\Curseddd.dll
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\obj\Debug\net9.0\Curseddd.pdb
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\obj\Debug\net9.0\Curseddd.genruntimeconfig.cache
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd\obj\Debug\net9.0\ref\Curseddd.dll
