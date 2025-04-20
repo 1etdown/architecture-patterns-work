@@ -1,9 +1,9 @@
 using Curseddd3.common.myevent;
+using Curseddd3.query.dto;
+using System.Collections.Concurrent;
+using Curseddd3.query.model;
 
 namespace Curseddd3.query.repository;
-
-using query.model;
-using System.Collections.Concurrent;
 
 public class InMemoryOrderReadRepository : IOrderReadRepository
 {
@@ -16,15 +16,19 @@ public class InMemoryOrderReadRepository : IOrderReadRepository
         switch (ev)
         {
             case OrderCreatedEvent e:
-                var m = new OrderReadModel(); m.On(e);
+                var m = new OrderReadModel();
+                m.On(e);
                 _store[e.OrderId] = m;
                 break;
-            case ItemAddedEvent e:
+
+            case ItemAddedEvent _: // исправлено
                 // не обрабатываем
                 break;
+
             case OrderChangedEvent e when _store.TryGetValue(e.OrderId, out var om):
                 om.On(e);
                 break;
+
             case OrderCompletedEvent e when _store.TryGetValue(e.OrderId, out var cm):
                 cm.On(e);
                 break;

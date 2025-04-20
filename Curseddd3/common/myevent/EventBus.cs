@@ -1,22 +1,31 @@
 namespace Curseddd3.common.myevent;
 
+public interface IEvent { }
+
+public interface IEventHandler<in T> where T : IEvent
+{
+    void HandleEvent(T ev);
+}
+
 public static class EventBus
 {
-    private static readonly List<Action<IEvent>> _subs = new();
-    public static void Publish(IEvent ev)
+    private static readonly List<object> _subscribers = new();
+
+    public static void Subscribe(object subscriber)
     {
-        foreach (var sub in _subs) sub(ev);
+        _subscribers.Add(subscriber);
     }
 
-    public static void Subscribe(object handler)
+    public static void Publish(IEvent ev)
     {
-        var methods = handler.GetType()
-            .GetMethods()
-            .Where(m =>
-                m.GetParameters().Length == 1 &&
-                typeof(IEvent).IsAssignableFrom(m.GetParameters()[0].ParameterType));
-
-        foreach (var m in methods)
-            _subs.Add(ev => m.Invoke(handler, new[] { ev }));
+        foreach (var sub in _subscribers)
+        {
+            var type = sub.GetType();
+            var method = type.GetMethod("HandleEvent", new[] { ev.GetType() });
+            if (method != null)
+            {
+                method.Invoke(sub, new object[] { ev });
+            }
+        }
     }
 }

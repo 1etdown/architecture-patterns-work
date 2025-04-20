@@ -12,3 +12,4 @@ C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd2\obj\Debug\net9.0\refint
 C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd2\obj\Debug\net9.0\Curseddd2.pdb
 C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd2\obj\Debug\net9.0\Curseddd2.genruntimeconfig.cache
 C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd2\obj\Debug\net9.0\ref\Curseddd2.dll
+C:\Users\FadEw\Desktop\Админка\Curseddd\Curseddd2\obj\Debug\net9.0\Curseddd2.sourcelink.json

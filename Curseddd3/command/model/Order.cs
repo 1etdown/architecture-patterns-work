@@ -10,6 +10,8 @@ public class Order
     public string Description { get; private set; } = string.Empty;
     public bool IsCompleted { get; private set; }
 
+    public string Status => IsCompleted ? "Завершён" : "В процессе";
+
     public Order(Guid id, string customer)
     {
         Id = id;

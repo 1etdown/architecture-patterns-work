@@ -16,7 +16,8 @@ public class CreateOrderHandler
     {
         var order = new Order(cmd.OrderId, cmd.Customer);
         _repo.Save(order);
-        EventBus.Publish(new OrderCreatedEvent(order.Id, order.Customer));
+        EventBus.Publish(new OrderCreatedEvent(order.Id, order.Customer, order.Status));
+
         return order.Id;
     }
 }
